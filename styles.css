@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Lora:wght@400;500;700&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  outline: none;
+}
+
+/* Button Popup */
+.btnPopup {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  color: azure;
+  cursor: pointer;
+}
+
+.question-icon {
+  font-size: 50px;
+}
+
+/* Box Popup */
+.info-popup {
+  position: absolute;
+  display: none;
+  align-items: center;
+  background-color: #ffffff;
+  top: 20%;
+  left: 35%;
+  width: 450px;
+  border-radius: 20px;
+  outline: 10px solid #ffffff25;
+}
+
+.info-p {
+  font-size: 18px;
+  width: 80%;
+  margin: 10px auto;
+  font-family: "Lora", serif;
+}
+
+.info-p:first-of-type {
+  margin-top: 40px;
+}
+
+.btn-cancel {
+  background-color: #3dd1e7;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  width: 50%;
+  max-width: 460px;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  margin: 20px 25% 20px;
+}
+
+.btn-cancel:focus {
+  outline: 0;
+}
+
+.btn-cancel:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.btn-cancel:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+/* Container */
+.scroll-container {
+  height: 100%;
+  flex: none;
+  scroll-snap-type: x mandatory;
+  overflow-x: hidden;
+  display: flex;
+}
+/* Page */
+.page-area {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.bg-color-first {
+  background-image: radial-gradient(
+    circle,
+    rgb(230, 117, 119) 10%,
+    rgba(204, 39, 43, 1)
+  );
+}
+.bg-color-second {
+  background-image: radial-gradient(
+    circle,
+    rgb(250, 174, 116) 10%,
+    rgba(224, 107, 18, 1)
+  );
+}
+.bg-color-third {
+  background-image: radial-gradient(
+    circle,
+    rgb(112, 223, 169) 10%,
+    rgb(23, 138, 61)
+  );
+}
+.bg-color-fourth {
+  background-image: radial-gradient(
+    circle,
+    rgb(80, 205, 221) 10%,
+    rgb(14, 102, 129)
+  );
+}
+.bg-color-fifth {
+  background-image: radial-gradient(
+    circle,
+    rgb(146, 141, 233) 10%,
+    rgb(71, 68, 128)
+  );
+}
+.bg-color-sixth {
+  background-image: radial-gradient(
+    circle,
+    rgb(235, 115, 205) 10%,
+    rgb(129, 14, 123)
+  );
+}
+/* Top - Description */
+.description {
+  width: 30%;
+  text-align: center;
+  color: rgb(245, 245, 245);
+  font-family: "Lora", serif;
+}
+
+.title {
+  font-family: "Domine", serif;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.459);
+}
+
+.dark-text {
+  color: #525626;
+}
+/* Middle navigation, only on mobile */
+.middle-nav {
+  display: none;
+}
+/* Bottom area */
+.bottom-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.img-area {
+  width: 100%;
+  height: 100%;
+}
+
+.plate-img {
+  display: block;
+  width: 650px;
+  margin: auto;
+}
+
+.arrow {
+  color: rgba(255, 255, 255, 0.967);
+  font-size: 50px;
+}
+
+.arrow-middle {
+  color: rgba(255, 255, 255, 0.967);
+  font-size: 40px;
+}
+.arrow-middle-off {
+  display: none;
+}
+.arrow-off {
+  color: rgba(255, 246, 228, 0.233);
+  cursor: text;
+}
+
+@media only screen and (min-width: 1550px) {
+  .plate-img {
+    width: 850px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .plate-img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .open-popup {
+    top: 40px;
+    right: 20px;
+  }
+
+  .info-popup {
+    left: 15%;
+    width: 70%;
+  }
+  .btn-cancel {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+  .page-area {
+    justify-content: space-between;
+  }
+  .description {
+    margin-top: 150px;
+    min-height: 290px;
+    width: 60%;
+  }
+  .bottom-area {
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+  }
+  .img-area {
+    width: auto;
+  }
+  .plate-img {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .info-popup {
+    width: 70%;
+  }
+
+  .info-p {
+    font-size: 15px;
+  }
+  .page-area {
+    justify-content: end;
+  }
+  .description {
+    margin-top: 50px;
+  }
+  .middle-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .nav {
+    display: none;
+  }
+  .bottom-area {
+    height: 300px;
+  }
+  .plate-img {
+    width: 500px;
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Visual meal menu. Initial project, web developer"
+    />
+    <meta name="keywords" content="Web developer, Project" />
+    <meta name="author" content="Timna Rubin" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="images/plate-wheat-solid.svg" type="image/x-icon" />
+    <title>Meal menu</title>
+  </head>
+  <body>
+
+    <div class="btn-popup" id="btnPopup">
+      <a class="btnPopup" onclick="popupInfo()"
+        ><i class="fa-regular fa-circle-question question-icon"></i
+      ></a>
+    </div>
+    <div class="info-popup" id="popupBox">
+      <p class="info-p title"><b>Welcome to our restaurant!</b></p>
+      <p class="info-p">
+        Our pre-made meal are designed with meticulous attention to detail,
+        ensuring a harmonious blend of flavors in every dish.
+      </p>
+      <p class="info-p">
+        A variety of expertly crafted dishes, including salad, creamy hummus,
+        pizza, pasta, and dessert. Savor the culinary delights without
+        compromising on quality or taste.
+      </p>
+      <p class="info-p">
+        To complement your dining experience, exquisite white wines are served
+        with the meal.
+      </p>
+      <button type="button" class="btn-cancel" onclick="popupInfo()">
+        Close
+      </button>
+    </div>
+    <div class="scroll-container">
+      <div class="page-area bg-color-first" id="salad">
+        <div class="description">
+          <h1 class="title">Mediterranean Salad</h1>
+          <h3 class="subtitle">First course</h3>
+          <p class="paragraph">
+            Juicy tomatoes, cucumbers, onion, and Kalamata olives tossed in a
+            tangy vinaigrette, topped with crumbled Bulgarian cheese. A
+            refreshing blend of Mediterranean flavors that will transport you to
+            sun-soaked shores.
+          </p>
+        </div>
+        <div class="middle-nav">
+          <a href="#"
+            ><i class="fa-solid fa-angle-left arrow-middle arrow-off"></i
+          ></a>
+          <a href="#hummus"
+            ><i class="fa-solid fa-angle-right arrow-middle"></i
+          ></a>
+        </div>
+        <div class="bottom-area">
+          <a class="nav">
+            <i class="fa-solid fa-angles-left arrow arrow-off"></i>
+          </a>
+          <div class="img-area">
+            <img
+              class="plate-img"
+              src="../images/salad.png"
+              alt="Salad plate"
+            />
+          </div>
+          <a class="nav" href="#hummus">
+            <i class="fa-solid fa-angles-right arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="page-area bg-color-second" id="hummus">
+        <div class="description">
+          <h1 class="title">Hummus</h1>
+          <h3 class="subtitle">Second course</h3>
+          <p class="paragraph">
+            Creamy chickpea dip infused with garlic, tahini, and a hint of
+            lemon. Served with a drizzle of olive oil. A timeless Middle Eastern
+            classic that delights the palate with its smooth texture and bold
+            flavors.
+          </p>
+        </div>
+        <div class="middle-nav">
+          <a href="#salad"
+            ><i class="fa-solid fa-angle-left arrow-middle"></i
+          ></a>
+          <a href="#pizza"
+            ><i class="fa-solid fa-angle-right arrow-middle"></i
+          ></a>
+        </div>
+        <div class="bottom-area">
+          <a href="#salad">
+            <i class="fa-solid fa-angles-left arrow"></i>
+          </a>
+          <div class="img-area">
+            <img
+              class="plate-img"
+              src="/images/hummus.png"
+              alt="Hummus plate"
+            />
+          </div>
+          <a href="#pizza">
+            <i class="fa-solid fa-angles-right arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="page-area bg-color-third" id="pizza">
+        <div class="description">
+          <h1 class="title">Pizza</h1>
+          <h3 class="subtitle">Third course</h3>
+          <p class="paragraph">
+            Indulge in a savory delight with our signature pizza topped with
+            plump black olives, briny anchovies, and vibrant spinach leaves. The
+            perfect balance of flavors, our thin crust is handcrafted and baked
+            to perfection, ensuring each bite is a burst of Mediterranean
+            goodness.
+          </p>
+        </div>
+        <div class="middle-nav">
+          <a href="#hummus"
+            ><i class="fa-solid fa-angle-left arrow-middle"></i
+          ></a>
+          <a href="#pasta"
+            ><i class="fa-solid fa-angle-right arrow-middle"></i
+          ></a>
+        </div>
+        <div class="bottom-area">
+          <a href="#hummus">
+            <i class="fa-solid fa-angles-left arrow"></i>
+          </a>
+          <div class="img-area">
+            <img class="plate-img" src="/images/pizza.png" alt="Pizza plate" />
+          </div>
+          <a href="#pasta">
+            <i class="fa-solid fa-angles-right arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="page-area bg-color-fourth" id="pasta">
+        <div class="description">
+          <h1 class="title">Pasta</h1>
+          <h3 class="subtitle">Fourth course</h3>
+          <p class="paragraph">
+            Creamy. Delicate. Divine. Enjoy our two-color pasta bathed in a
+            luscious cream sauce, mingled with sautéed mushrooms. A symphony of
+            flavors that will transport you to pasta paradise.
+          </p>
+        </div>
+        <div class="middle-nav">
+          <a href="#pizza"
+            ><i class="fa-solid fa-angle-left arrow-middle"></i
+          ></a>
+          <a href="#dessert"
+            ><i class="fa-solid fa-angle-right arrow-middle"></i
+          ></a>
+        </div>
+        <div class="bottom-area">
+          <a href="#pizza">
+            <i class="fa-solid fa-angles-left arrow"></i>
+          </a>
+          <div class="img-area">
+            <img class="plate-img" src="/images/pasta.png" alt="Pasta plate" />
+          </div>
+          <a href="#dessert">
+            <i class="fa-solid fa-angles-right arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="page-area bg-color-fifth" id="dessert">
+        <div class="description">
+          <h1 class="title">Pineapple pie</h1>
+          <h3 class="subtitle">Dessert</h3>
+          <p class="paragraph">
+            Indulge in a slice of tropical bliss with our homemade pineapple
+            pie. A buttery, flaky crust envelops a luscious filling of juicy
+            pineapple chunks, creating a sweet and tangy sensation that will
+            transport your taste buds to paradise.
+          </p>
+        </div>
+        <div class="middle-nav">
+          <a href="#pasta"
+            ><i class="fa-solid fa-angle-left arrow-middle"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-solid fa-angle-right arrow-middle arrow-off"></i
+          ></a>
+        </div>
+        <div class="bottom-area">
+          <a href="#pasta">
+            <i class="fa-solid fa-angles-left arrow"></i>
+          </a>
+          <div class="img-area">
+            <img
+              class="plate-img"
+              src="/images/pineapple-pie.png"
+              alt="Pasta plate"
+            />
+          </div>
+          <a href="#">
+            <i class="fa-solid fa-angles-right arrow arrow-off"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+         const btnPopup = document.getElementById("btnPopup");
+         const closePopup = document.getElementById("btnClosePopup");
+         const popupBox = document.getElementById("popupBox");
+        function popupInfo()  {
+    if (popupBox.style.display === 'block') {
+        popupBox.style.display = 'none';
+    } else {
+        popupBox.style.display = 'block';
+    }
+};
+        </script>
+  </body>
+</html>
