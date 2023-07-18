@@ -3,7 +3,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   margin: 0;
   padding: 0;
 }
@@ -62,6 +61,7 @@ a {
   cursor: pointer;
   transform: rotate(-2deg);
   margin: 20px 25% 20px;
+  font-size: 20px;
 }
 
 .btn-cancel:focus {
@@ -87,8 +87,8 @@ a {
   height: 100%;
   flex: none;
   scroll-snap-type: x mandatory;
-  overflow-x: hidden;
-  display: flex;
+  overflow: hidden;
+  /* display: flex; */
 }
 /* Page */
 .page-area {
@@ -218,6 +218,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .btnPopup {
     top: 40px;
     right: 20px;
@@ -262,8 +265,8 @@ a {
   }
 
   .info-popup {
-    top: 15%;
-    left: 4%;
+    top: 10%;
+    left: 10%;
     width: 80%;
   }
 
@@ -276,7 +279,6 @@ a {
 
   .page-area {
     justify-content: end;
-    height: calc(var(--vh, 1vh) * 100);
   }
   .description {
     margin-top: 50px;
