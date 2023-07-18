@@ -280,6 +280,7 @@ a {
   }
   .description {
     margin-top: 50px;
+    width: 70%;
   }
   .middle-nav {
     display: flex;
