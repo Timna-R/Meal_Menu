@@ -17,7 +17,7 @@ This project is a responsive meal menu website built with HTML, CSS, and JavaScr
 ## live site
 
 Enjoy exploring the delectable dishes and have a delightful dining experience!
-[Open the meal Menu website](https://unsplash.com/)
+[Open the meal Menu website](https://timna-r.github.io/Meal_Menu/)
 
 ## Usage
 If you'd like to enhance the menu or add new features, please follow these steps:
