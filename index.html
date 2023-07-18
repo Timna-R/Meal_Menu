@@ -19,7 +19,6 @@
     <title>Meal menu</title>
   </head>
   <body>
-
     <div class="btn-popup" id="btnPopup">
       <a class="btnPopup" onclick="popupInfo()"
         ><i class="fa-regular fa-circle-question question-icon"></i
@@ -69,11 +68,7 @@
             <i class="fa-solid fa-angles-left arrow arrow-off"></i>
           </a>
           <div class="img-area">
-            <img
-              class="plate-img"
-              src="./images/salad.png"
-              alt="Salad plate"
-            />
+            <img class="plate-img" src="./images/salad.png" alt="Salad plate" />
           </div>
           <a class="nav" href="#hummus">
             <i class="fa-solid fa-angles-right arrow"></i>
@@ -218,16 +213,27 @@
       </div>
     </div>
     <script>
-         const btnPopup = document.getElementById("btnPopup");
-         const closePopup = document.getElementById("btnClosePopup");
-         const popupBox = document.getElementById("popupBox");
-        function popupInfo()  {
-    if (popupBox.style.display === 'block') {
-        popupBox.style.display = 'none';
-    } else {
-        popupBox.style.display = 'block';
-    }
-};
-        </script>
+      // get the viewport height and we multiple it by 1% to get a value for a vh unit
+      let vh = window.innerHeight * 0.01;
+      // set the value in the --vh custom property to the root of the document
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+      // listen to the resize event
+      window.addEventListener("resize", () => {
+        // execute the same script as before
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      });
+      const btnPopup = document.getElementById("btnPopup");
+      const closePopup = document.getElementById("btnClosePopup");
+      const popupBox = document.getElementById("popupBox");
+      function popupInfo() {
+        if (popupBox.style.display === "block") {
+          popupBox.style.display = "none";
+        } else {
+          popupBox.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

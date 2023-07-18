@@ -252,15 +252,29 @@ a {
 }
 
 @media only screen and (max-width: 415px) {
+  .open-popup {
+    top: 20px;
+    right: 10px;
+  }
+  .question-icon {
+    font-size: 30px;
+  }
+
   .info-popup {
-    width: 70%;
+    top: 5%;
+    width: 80%;
   }
 
   .info-p {
     font-size: 15px;
   }
+  .btn-cancel {
+    font-size: 18px;
+  }
+
   .page-area {
     justify-content: end;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .description {
     margin-top: 50px;
